@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我们</title>
+    <title>自我介绍</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <!-- 网站小图标 -->
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- 引入初始化样式文件 -->
@@ -34,9 +35,7 @@
         </div>
         <div class="ziwo">
             <p class="touxiang">二维码</p>
-            <div class="zitu"> 
-			<img src="images/code.png" style="width: 50px; height: 50px;" />
-			</div>
+            <div class="zitu"> </div>
             <p class="neirong">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我的名字叫艾孜买提，来及新疆伊宁市，维吾尔族,是2020级计算机与通信工程学院计算机类2007班的学生。
                 在学习理论知识的同时，我也注重实践能力的培养和自身能力的发展。任职班文娱和组织委员期间，认真负责并与班其他干部积极组织全班开展各种有益文体活动，多次成功组织全班的主题班会和校内外各种活动，增强了组织能力和团体合作能力;在大学生活的假期里，积极寻找相关专业的实践工作，提高自身的综合素质;在校期间，尊敬老师，团结同学，乐于助人，有强烈的集体主义观念。<br>
@@ -60,7 +59,10 @@
         <div class="person">
         </div>
     </div>
-
+    <script>
+         var qrcodeContainer = document.getElementsByClassName("zitu")[0];
+                new QRCode(qrcodeContainer, "https://azmat-abd.github.io/repostory-1/");
+    </script>
 
 </body>
 
